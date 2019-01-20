@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LearningCardView" customModule="Leksikon" customModuleProvider="target">
+            <connections>
+                <outlet property="doneImageView" destination="VpG-rC-xcM" id="wCm-UJ-FAS"/>
+                <outlet property="favouriteIcon" destination="JGF-yU-TEQ" id="YII-ZU-A2c"/>
+                <outlet property="label" destination="eHh-h2-hsP" id="2Jn-bS-eYE"/>
+                <outlet property="rejectImageView" destination="5jG-23-2aP" id="SNW-zW-3av"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MXR-i9-aPN" customClass="BaseView" customModule="Leksikon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="333"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHh-h2-hsP">
+                    <rect key="frame" x="183.5" y="142" width="108" height="49"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="41"/>
+                    <color key="textColor" white="0.8494042522831049" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="5jG-23-2aP">
+                    <rect key="frame" x="437" y="295" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="M2U-xh-pWs"/>
+                        <constraint firstAttribute="width" constant="23" id="Xuv-eQ-zA4"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="done" translatesAutoresizingMaskIntoConstraints="NO" id="VpG-rC-xcM">
+                    <rect key="frame" x="15" y="295" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="18a-r1-fhX"/>
+                        <constraint firstAttribute="width" constant="23" id="nNj-d7-RkO"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starOff" translatesAutoresizingMaskIntoConstraints="NO" id="JGF-yU-TEQ">
+                    <rect key="frame" x="434" y="15" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="aNr-1a-qoa"/>
+                        <constraint firstAttribute="width" constant="26" id="jfd-4u-Rmh"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zcS-PM-u0P" firstAttribute="bottom" secondItem="VpG-rC-xcM" secondAttribute="bottom" constant="15" id="NjD-6s-LGy"/>
+                <constraint firstItem="VpG-rC-xcM" firstAttribute="leading" secondItem="zcS-PM-u0P" secondAttribute="leading" constant="15" id="OYA-lb-9QL"/>
+                <constraint firstItem="zcS-PM-u0P" firstAttribute="trailing" secondItem="5jG-23-2aP" secondAttribute="trailing" constant="15" id="WKp-WK-N7g"/>
+                <constraint firstItem="zcS-PM-u0P" firstAttribute="bottom" secondItem="5jG-23-2aP" secondAttribute="bottom" constant="15" id="cRX-hG-hM3"/>
+                <constraint firstItem="eHh-h2-hsP" firstAttribute="centerX" secondItem="MXR-i9-aPN" secondAttribute="centerX" id="iaa-RG-cnU"/>
+                <constraint firstItem="zcS-PM-u0P" firstAttribute="trailing" secondItem="JGF-yU-TEQ" secondAttribute="trailing" constant="15" id="lZa-5g-hm7"/>
+                <constraint firstItem="JGF-yU-TEQ" firstAttribute="top" secondItem="zcS-PM-u0P" secondAttribute="top" constant="15" id="rCM-Mj-sMO"/>
+                <constraint firstItem="eHh-h2-hsP" firstAttribute="centerY" secondItem="MXR-i9-aPN" secondAttribute="centerY" id="wAE-AN-KM1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="zcS-PM-u0P"/>
+            <point key="canvasLocation" x="-114.40000000000001" y="-154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="done" width="30" height="22"/>
+        <image name="starOff" width="22" height="21"/>
+        <image name="x" width="22" height="22"/>
+    </resources>
+</document>
